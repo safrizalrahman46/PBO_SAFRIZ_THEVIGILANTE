@@ -8,7 +8,7 @@ public class User {
     private ArrayList<Client> clients;
 
     public User(String username, String password) {
-        this.username = username;
+        this.username = username;   
         this.password = password;
         this.clients = new ArrayList<>();
     }
@@ -28,10 +28,6 @@ public class User {
     public String getInfo() {
         StringBuilder info = new StringBuilder();
         info.append("Username: ").append(username).append("\n");
-        info.append("Clients:\n");
-        for (Client client : clients) {
-            info.append(client.getInfo()).append("\n");
-        }
         return info.toString();
     }
 }

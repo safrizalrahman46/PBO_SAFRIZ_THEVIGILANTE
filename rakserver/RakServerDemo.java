@@ -13,7 +13,6 @@ public class RakServerDemo {
         // Add users to clients
         client1.addUser(user1);
         client1.addUser(user2);
-        client2.addUser(user1);
 
         // Create RakServers
         RakServer rakServer1 = new RakServer("R001", "Location A");
@@ -22,7 +21,6 @@ public class RakServerDemo {
         // Add clients to RakServers
         rakServer1.addClient(client1);
         rakServer1.addClient(client2);
-        rakServer2.addClient(client2);
 
         // Print information
         System.out.println("RakServer 1 Info:");
