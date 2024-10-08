@@ -10,7 +10,7 @@ public class Main {
         manusia1.makan(); // Output: Dosen makan di kantin universitas.
         manusia2.makan(); // Output: Mahasiswa makan mie instan.
 
-        // Manusia tidak memiliki metode lembur() atau tidur(), maka tidak bisa dipanggil langsung
+        // Manusia tidak memiliki metode lembur() atau tidur(), maka tidak bisa dipanggil langsung Ya itulah manusia
         // Jika ingin memanggil metode spesifik subclass, casting diperlukan:
         ((Dosen) manusia1).lembur(); // Output: Dosen sedang lembur menyiapkan materi.
         ((Mahasiswa) manusia2).tidur(); // Output: Mahasiswa tidur setelah belajar.

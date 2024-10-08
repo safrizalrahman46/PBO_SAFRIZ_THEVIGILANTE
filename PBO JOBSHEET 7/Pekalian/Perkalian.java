@@ -28,7 +28,7 @@ public class Perkalian {
         // Memanggil metode perkalian dengan 3 parameter
         // objek.perkalian(34, 23, 56); // Output: 43744
 
-        objek.perkalian(34.23, 23.7); 
+        // objek.perkalian(34.23, 23.7); 
     }
 }
 
