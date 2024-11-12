@@ -14,6 +14,15 @@ public class Demo {
         // System.out.println(dosen1.nidn);       // Prints the NIDN specific to Dosen
         // dosen1.mengajar();
 
+        Pegawai pegawai1 = dosen1;
+        System.out.println(pegawai1.nip);       // Accessible, because `nip` is in `Pegawai`
+        System.out.println(pegawai1.nama);      // Accessible, because `nama` is in `Pegawai`
+        pegawai1.displayInfo();  
+        // The following lines will cause errors:
+        // System.out.println(pegawai1.nidn);   // Error: `nidn` is not a field in `Pegawai`
+        // pegawai1.mengajar();                 // Error: `mengajar()` is not a method in `Pegawai`
+
+
 
         // Heterogeneous collection
         ArrayList<Pegawai> daftarPegawai = new ArrayList<Pegawai>();
@@ -31,8 +40,8 @@ public class Demo {
         }
 
         // Demonstrating upcasting and downcasting
-        Pegawai pegawai1 = dosen1;  // Upcasting
-        pegawai1.displayInfo();  // Calls overridden method in Dosen
+        // Pegawai pegawai1 = dosen1;  // Upcasting
+        // pegawai1.displayInfo();  // Calls overridden method in Dosen
 
         // Downcasting
         if (pegawai1 instanceof Dosen) {
